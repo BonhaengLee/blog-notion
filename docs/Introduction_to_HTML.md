@@ -1,7 +1,7 @@
 ---
 title: HTML 소개
-sidebar_position: 2
-slug: /2cd79a7f-1533-4ccb-95c5-1e84abc6a5c5
+sidebar_position: 1
+slug: /Introduction_to_HTML
 ---
 
 
@@ -19,7 +19,7 @@ HTML은 문서의 특정 텍스트 영역이 문단인지 표인지 구분하는
 - 기본 작업 환경이 구축되어야 한다.
 - 파일 생성 및 관리 방법을 알고 있어야 한다.
 
-:::tip
+:::info
 
 파일 생성이 힘든 기기라면 JSBin이나 Thimble을 이용해보자.
 
@@ -31,5 +31,5 @@ HTML은 문서의 특정 텍스트 영역이 문단인지 표인지 구분하는
 # 안내서 {#b22a094408374564ba51ddd4e42e0cb4}
 
 
-[HTML 시작하기](/218d775a-ea18-4b73-b255-2d23756497e5)
+[HTML 시작하기](/start-html)
 

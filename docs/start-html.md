@@ -1,7 +1,7 @@
 ---
 title: HTML 시작하기
-sidebar_position: 5
-slug: /218d775a-ea18-4b73-b255-2d23756497e5
+sidebar_position: 2
+slug: /start-html
 ---
 
 
@@ -17,7 +17,7 @@ slug: /218d775a-ea18-4b73-b255-2d23756497e5
 | 목표    | HTML언어에 대해 익숙해지고, HTML을 이용하여 실습해봅니다.                                                                                                                                                                                                          |
 
 
-# HTML이란? {#b39eca0392ed4848b13f5103b49a7b29}
+# HTML이란? {#68acaa70c8854980ab56eeabf8117206}
 
 
 HTML(Hypertext Markup Language, 하이퍼텍스트 마크업 언어)는 프로그래밍 언어는 아니고 웹페이지의 구조를 브라우저가 알 수 있도록 하는 마크업 언어다.
@@ -40,9 +40,9 @@ tags는 웹 상의 다른 페이지로 이동하게 하는 하이퍼 링크 내�
 ```
 
 
-:::💁🏻
+:::info
 
-**참고** : HTML 요소는 대소문자를 구분하지 않는다. 하지만 가독성 문제로 소문자로 작성한다.
+HTML 요소는 대소문자를 구분하지 않는다. 하지만 가독성 문제로 소문자로 작성한다.
 
 :::
 
@@ -52,27 +52,18 @@ tags는 웹 상의 다른 페이지로 이동하게 하는 하이퍼 링크 내�
  
 
 
-# [**HTML 요소(Element)의 구조**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_%EC%9A%94%EC%86%8Celement%EC%9D%98_%EA%B5%AC%EC%A1%B0) {#fe002d2e0452454987cae6026f3cfa18}
+# **HTML 요소(Element)의 구조** {#fe002d2e0452454987cae6026f3cfa18}
 
 
-![https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png](/notion_imgs/1829960358.png)
+![https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png](/notion_imgs/2060362353.png)
 
 1. **여는 태그(Opening tag):** 이것은 요소의 “이름”과(이 경우 “p”), “열고 닫는 꺽쇠 괄호”로 구성된다. 
 요소가 시작(이 경우 단락의 시작 부분)부터 효과가 적용되기 시작한다.
-
-	:::💁🏻
-	
-	효과?
-	
-	:::
-	
-
-
 1. **닫는 태그(Closing tag):** 이것은 요소의 이름 앞에 슬래시(/)가 있는것을 제외하면 여는 태그(opening tag)와 같다. 이것은 요소의 끝(이 경우 단락의 끝 부분)에 위치한다.
 1. **내용(Content):** 요소의 내용이며, 이 경우 단순한 텍스트이다.
 1. **요소(Element):** 여는 태그, 닫는 태그, 내용을 통틀어 요소(element)라고한다.
 
-# [**포함(내포:內包)된 요소(Nesting elements)**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#%ED%8F%AC%ED%95%A8%EB%82%B4%ED%8F%AC%E5%85%A7%E5%8C%85%EB%90%9C_%EC%9A%94%EC%86%8Cnesting_elements) {#58b6c757c6914277a522a27038f1ee50}
+# **포함(내포:內包)된 요소(Nesting elements)** {#58b6c757c6914277a522a27038f1ee50}
 
 
 요소 안에 다른 요소가 들어갈 수 있다. 
@@ -97,7 +88,7 @@ tags는 웹 상의 다른 페이지로 이동하게 하는 하이퍼 링크 내�
 잘못 된 내포에도 불구하고 어떤 브라우저에서 이상없이 보일 수도 있다. 하지만 그저 그 브라우저가 문법에 흐물흐물(permittable)해서 웬만한 오류는 자체 수정해서 브라우저 창에 렌더링해주기 때문이다. '웬만한 오류는 알아서 처리해 준다.' 는 부분에서 초보자는 특히 주의해야 한다.
 
 
-# [**블럭 레벨 요소 vs 인라인 요소(Block versus inline elements)**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#%EB%B8%94%EB%9F%AD_%EB%A0%88%EB%B2%A8_%EC%9A%94%EC%86%8C_vs_%EC%9D%B8%EB%9D%BC%EC%9D%B8_%EC%9A%94%EC%86%8Cblock_versus_inline_elements) {#8c139a6b1e31481a90e1565ad82cc962}
+# **블럭 레벨 요소 vs 인라인 요소(Block versus inline elements)** {#8c139a6b1e31481a90e1565ad82cc962}
 
 - **블록 레벨 요소(Block-level elements)** 는 웹페이지 상에 블록(Block)을 만드는 요소이다. 
 블록 레벨 요소는 앞뒤 요소 사이에 새로운 줄(Line)을 만들고 나타납니다. 즉 블록 레벨 요소 이전과 이후 요소사이의 줄을 바꾼다. 
@@ -131,7 +122,7 @@ sixth
 ```
 
 
-:::💁🏻
+:::info
 
 **참고:** HTML5에서 요소 분류를 재정의했다: [Element content categories](https://www.whatwg.org/specs/web-apps/current-work/complete/section-index.html#element-content-categories). 이러한 정의는 이전의 정의보다 더 정확하고 덜 모호하지만, "블록"과 "인라인"보다 이해하기 훨씬 더 복잡하기 때문에, 이 주제 내내 이 정의들을 고수한다.
 
@@ -140,7 +131,7 @@ sixth
 
 
 
-:::💁🏻
+:::info
 
 **참고:** 이 주제에서 사용되는 "블럭(block)"과 "인라인(inline)"의 뜻은 [the types of CSS boxes (en-US)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#types_of_css_boxes)에서 사용하고 있는 같은 단어와 혼돈하면 안된다. 기본적으로는 상관관계가 있지만 CSS 표시 유형을 변경해도 요소의 범주는 변경되지 않으며 요소가 포함할 수 있는 요소와 요소가 포함될 수 있는 요소에는 영향을 주지 않는다. HTML5가 이러한 용어들을 삭제했던 이유 중 하나는 이러한 다소 흔한 혼란을 막기 위해서였다.
 
@@ -149,16 +140,16 @@ sixth
 
 
 
-:::💁🏻
+:::info
 
-**참고:** [Block-level elements](https://developer.mozilla.org/ko/docs/Glossary/Block-level_content)문서와 [Inline elements](https://developer.mozilla.org/ko/docs/Glossary/Inline-level_content)문서를 참고하면 블럭과 인라인 요소에 대한 유용한 내용을 찾을 수 있다.
+**참고:** [Block-level elements](https://developer.mozilla.org/ko/docs/Glossary/Block-level_content) 문서와 [Inline elements](https://developer.mozilla.org/ko/docs/Glossary/Inline-level_content) 문서를 참고하면 블럭과 인라인 요소에 대한 유용한 내용을 찾을 수 있다.
 
 :::
 
 
 
 
-# [**빈 요소(Empty elements)**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#%EB%B9%88_%EC%9A%94%EC%86%8Cempty_elements) {#a178047ec6114b898a0abf61e709ff9b}
+# **빈 요소(Empty elements)** {#a178047ec6114b898a0abf61e709ff9b}
 
 
 모든 요소가 위에 언급된 여는 태그, 내용, 닫는 태그 패턴을 따르는 것은 아닙니다. 주로 문서에 무언가를 첨부하기 위해 단일 태그(Single tag)를 사용하는 요소도 있습니다. 예를 들어 [`<img>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/img) 요소는 해당 위치에 이미지를 삽입하기 위한 요소입니다:
@@ -167,7 +158,7 @@ sixth
 “단일 태그”를 사용하는 &lt;img&gt; 같은 요소는 Empty elements다.
 
 
-:::💁🏻
+:::info
 
 **참고:** 빈 요소는 가끔 Void 요소로 불리기도 한다.
 
@@ -176,10 +167,10 @@ sixth
 
 
 
-# [**속성(Attributes)**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#%EC%86%8D%EC%84%B1attributes) {#f6dbe6f6319b42ff897a578ffd7200ca}
+# **속성(Attributes)** {#f6dbe6f6319b42ff897a578ffd7200ca}
 
 
-![https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png](/notion_imgs/420700055.png)
+![https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png](/notion_imgs/1963280756.png)
 
 
 속성을 사용할 때에는 아래 내용을 지켜야 한다:
@@ -209,7 +200,7 @@ sixth
 값이 없는 속성을 불 속성이라고 한다.
 
 
-```java
+```html
 <input type="text" disabled="disabled">
 ```
 
@@ -217,7 +208,7 @@ sixth
 그 속성의 이름과 동일한 하나의 값만 가질 수 있다.
 
 
-```java
+```html
 <input type="text" disabled>
 ```
 
@@ -261,7 +252,7 @@ sixth
 ```
 
 
-# [**HTML 문서의 구조**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_%EB%AC%B8%EC%84%9C%EC%9D%98_%EA%B5%AC%EC%A1%B0) {#b8f57313ae334fd8915135ae9bf550f8}
+# **HTML 문서의 구조** {#b8f57313ae334fd8915135ae9bf550f8}
 
 
 ```html
@@ -286,7 +277,7 @@ sixth
 1. `<title></title>`: 페이지가 로드되는 브라우저 탭에 표시되는 제목으로 사용. 북마크 시 페이지 설명에도 사용됨.
 1. `<body></body>`: 페이지에 표시되는 모든 콘텐츠가 포함된다.
 
-## [**HTML 공백**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_%EA%B3%B5%EB%B0%B1) {#b49056d2e9a34efe9349ecedfbc5d7c6}
+## **HTML 공백** {#b49056d2e9a34efe9349ecedfbc5d7c6}
 
 
 HTML 요소 내에서 얼마나 많은 공백(하나 이상 또는 줄 바꿈)을 사용하든 HTML 파서는 코드를 렌더링할 때 공백 시퀀스를 단일 공백으로 줄인다. 하지만 가독성을 위해 공백을 적절히 사용해라.
@@ -295,7 +286,7 @@ HTML 요소 내에서 얼마나 많은 공백(하나 이상 또는 줄 바꿈)�
 HTML은 중첩된 각 요소가 내부에 있는 것보다 두 칸 더 들여쓰기되어 있다.
 
 
-# [**Entity references: HTML에 특수 문자 포함**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#entity_references_html%EC%97%90_%ED%8A%B9%EC%88%98_%EB%AC%B8%EC%9E%90_%ED%8F%AC%ED%95%A8) {#0ff7660b760e44e7bc7dc4d5e5b04dae}
+# **Entity references: HTML에 특수 문자 포함** {#0ff7660b760e44e7bc7dc4d5e5b04dae}
 
 
 HTML 구문에 쓰이는 `<`,`>`, `"`및 `&` 는 텍스트에 어떻게 포함시킬까?
@@ -317,7 +308,7 @@ HTML 구문에 쓰이는 `<`,`>`, `"`및 `&` 는 텍스트에 어떻게 포함
 첫번째 단락의 경우 &lt;p&gt;의 두 번째 인스턴스를 새 단락이 시작하는 것으로 해석한다.
 
 
-:::tip
+:::info
 
 **참고:** HTML의 [문자 인코딩이 UTF-8로 설정](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#specifying_your_document%27s_character_encoding)되어 있기 때문에 최신 브라우저는 실제 기호를 잘 처리하므로 다른 기호에 대해서는 엔티티 참조를 사용할 필요가 없다.
 
@@ -326,7 +317,7 @@ HTML 구문에 쓰이는 `<`,`>`, `"`및 `&` 는 텍스트에 어떻게 포함
 
 
 
-# [**HTML 주석**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_%EC%A3%BC%EC%84%9D) {#2036458b3a494b7caaf7f96a6b7b28f9}
+# **HTML 주석** {#2036458b3a494b7caaf7f96a6b7b28f9}
 
 
 주석의 목적은 코드에 메모를 포함시켜 논리 또는 코딩을 설명할 수 있도록 하는 것이다. 

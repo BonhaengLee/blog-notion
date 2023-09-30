@@ -1,7 +1,7 @@
 ---
 title: 하이퍼링크 만들기
-sidebar_position: 8
-slug: /00a6e73a-3ef9-421c-8fff-929613a5a9c4
+sidebar_position: 5
+slug: /hyperlink
 ---
 
 
@@ -14,7 +14,7 @@ slug: /00a6e73a-3ef9-421c-8fff-929613a5a9c4
 | 목표    | 하이퍼링크를 효과적으로 다루는 방법과 수많은 파일들을 함께 연결하는 방법을 배웁니다.                                                                                                                                                                                                                             |
 
 
-# [**하이퍼링크란**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#%ED%95%98%EC%9D%B4%ED%8D%BC%EB%A7%81%ED%81%AC%EB%9E%80) {#1fbddc95c08c4db0a9151a25d2bc0957}
+# **하이퍼링크란** {#1fbddc95c08c4db0a9151a25d2bc0957}
 
 
 하이퍼링크는 처음부터 웹의 기능이었으며 웹을 웹으로 만드는 요소입니다. 하이퍼링크를 사용하면 문서를 다른 문서나 리소스에 연결하거나, 문서의 특정 부분에 연결하거나, 웹 주소에서 앱을 사용할 수 있다.
@@ -24,13 +24,13 @@ slug: /00a6e73a-3ef9-421c-8fff-929613a5a9c4
 > 웹 브라우저가 파일을 표시하거나 처리하는 방법을 모르는 경우 파일을 열 것인지(이 경우 파일을 열거나 처리해야 할 의무가 장치의 적절한 기본 앱에 전달됨) 또는 파일을 다운로드할 것인지(이 경우 나중에 처리를 시도할 수 있음) 묻는 메시지가 표시됩니다.
 
 
-# [**링크의 구조**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#%EB%A7%81%ED%81%AC%EC%9D%98_%EA%B5%AC%EC%A1%B0) {#f3383bad460944e6ae73e7b54c49649e}
+# **링크의 구조** {#f3383bad460944e6ae73e7b54c49649e}
 
 
 기본 링크는 텍스트 또는 block level links를 `<a>` 요소 안에 감싸고 웹 주소를 포함하는 `href` 속성(**Hypertext Reference** 또는 **target**)을 사용하여 생성된다.
 
 
-:::🎉
+:::note
 
 **왜 block level links를 허용할까?**
 
@@ -66,19 +66,19 @@ HTML5에서 **`<a>`** 요소는 예외적으로 블록 레벨 요소를 포함�
 
 
 
-## [**Block level 링크들**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#block_level_%EB%A7%81%ED%81%AC%EB%93%A4) {#06694aaf90a84c1ca58ec7aae82e6d4b}
+## **Block level 링크들** {#06694aaf90a84c1ca58ec7aae82e6d4b}
 
 
 어떤 것이든 링크로 바꿀 수 있다. 
 
 
-## [**이미지 링크들**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#%EC%9D%B4%EB%AF%B8%EC%A7%80_%EB%A7%81%ED%81%AC%EB%93%A4) {#5278be8868cb41f29c64523de64aa34f}
+## **이미지 링크들** {#5278be8868cb41f29c64523de64aa34f}
 
 
 …
 
 
-## [**title 속성에 부가적인 정보를 더하기**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#title_%EC%86%8D%EC%84%B1%EC%97%90_%EB%B6%80%EA%B0%80%EC%A0%81%EC%9D%B8_%EC%A0%95%EB%B3%B4%EB%A5%BC_%EB%8D%94%ED%95%98%EA%B8%B0) {#1f8901e640954ea593098ad315bcc6a3}
+## **title 속성에 부가적인 정보를 더하기** {#1f8901e640954ea593098ad315bcc6a3}
 
 
 Title은 페이지에 포함된 정보 또는 웹 사이트에서 주의해야 할 사항 등 **링크에 대한 추가 정보**를 포함하고 있습니다.
@@ -99,10 +99,7 @@ Title은 페이지에 포함된 정보 또는 웹 사이트에서 주의해야 �
 > **참고:** 링크 제목은 <u>**마우스 호버에만 표시**</u>되므로 키보드 컨트롤이나 터치스크린을 사용하여 웹 페이지를 탐색하는 사용자는 제목 정보에 액세스하는 데 어려움을 겪습니다. Title의 정보가 페이지의 사용에 있어서 <u>**정말로 중요하다면, 해당하는 정보를 일반 텍스트로 넣어줌으로써 모든 사용자가 접근할 수 있는 방식으로 표시**</u>해야 합니다.
 
 
-## [**능동학습: 예제 링크를 만들어봅시다**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#%EB%8A%A5%EB%8F%99%ED%95%99%EC%8A%B5_%EC%98%88%EC%A0%9C_%EB%A7%81%ED%81%AC%EB%A5%BC_%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B4%85%EC%8B%9C%EB%8B%A4) {#ab95ada0866441c183b010473f3f327d}
-
-
-# [**URL과 path에 대한 기본 지침**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#url%EA%B3%BC_path%EC%97%90_%EB%8C%80%ED%95%9C_%EA%B8%B0%EB%B3%B8_%EC%A7%80%EC%B9%A8) {#2662abba549644daac37334c964125f0}
+# **URL과 path에 대한 기본 지침** {#2662abba549644daac37334c964125f0}
 
 
 URL, 혹은 Uniform Resource Locator은 단순히 무언가가 **웹상의 어디에 위치하는지 결정하는 하나의 텍스트 문자열**이다.
@@ -111,13 +108,13 @@ URL, 혹은 Uniform Resource Locator은 단순히 무언가가 **웹상의 어�
 URL은 파일들을 찾기위해 path를 이용합니다. **path는 당신이 관심있어 하는 파일이 파일 시스템 어디에 있는지 구체적으로 명시**하구요. 디렉토리 구조에 대한 예제를 보시죠. ([하이퍼링크 만들기](https://github.com/mdn/learning-area/tree/master/html/introduction-to-html/creating-hyperlinks)를 보세요.)
 
 
-![](/notion_imgs/1323142560.png)
+![](/notion_imgs/1715172405.png)
 
 
 이 디렉토리 구조의 **root**를 `creating-hyperlinks`라고 부릅니다. 웹사이트를 로컬 단에서 다룰 때에는 전체 웹사이트가 모두 들어갈 수 있는 하나의 디렉토리를 가져야 할 것입니다. Root 안에서 우리는 `index.html` 파일과 `contacts.html` 파일을 갖습니다. 실제 웹사이트에서 `index.html` 는 우리의 **홈페이지 또는 랜딩 페이지**(웹사이트의 접속 포인트 또는 웹사이트의 특정 부분이 되는 페이지)가 될 것이다.
 
 
-:::🎉
+:::note
 
 `creating-hyperlinks` 는 처음 들어본다.
 
@@ -147,7 +144,7 @@ URL은 파일들을 찾기위해 path를 이용합니다. **path는 당신이 �
 ```
 
 
-## [**문서 조각**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#%EB%AC%B8%EC%84%9C_%EC%A1%B0%EA%B0%81) {#2928de2929404bf79107b7bc7c869df8}
+## **문서 조각** {#2928de2929404bf79107b7bc7c869df8}
 
 
 HTML 문서 내부의 특정 부분(Document fragments, 문서 조각)에 연결할 수 있다.
@@ -177,7 +174,7 @@ HTML 문서 내부의 특정 부분(Document fragments, 문서 조각)에 연결
 ```
 
 
-## [**절대 URL과 상대 URL**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#%EC%A0%88%EB%8C%80_url%EA%B3%BC_%EC%83%81%EB%8C%80_url) {#3ee950f977e84c3691c79607f1a1b473}
+## **절대 URL과 상대 URL** {#3ee950f977e84c3691c79607f1a1b473}
 
 
 **절대 URL:** [<u>**protocol**</u>](https://developer.mozilla.org/ko/docs/Glossary/Protocol)<u>**과**</u> [<u>**domain name**</u>](https://developer.mozilla.org/ko/docs/Glossary/Domain_name)<u>**을 포함한, 웹에서 정의된 절대적인 위치**</u>를 가리킵니다. 예를 들어, 만약 `index.html` 페이지가 `projects` 폴더에 업로드되면 이는 웹 서버의 root 안에 위치하게 되고 웹 사이트의 도메인이 `http://www.example.com`라면, 해당 페이지는 `http://www.example.com/projects/index.html` (혹은 그저 `http://www.example.com/projects/`가 됩니다. <u>_**대부분의 웹 서버는 URL에서 명시되지 않은 경우 페이지를 불러오기 위해**_</u> <u>_**`index.html`**_</u><u>_**과 같은 랜딩 페이지를 찾습니다.**_</u>)
@@ -192,5 +189,5 @@ HTML 문서 내부의 특정 부분(Document fragments, 문서 조각)에 연결
 상대 URL은 파일의 실제 위치가 어디냐에 따라 다른 장소를 가리킬 것입니다. 예를 들어 여러분이 `index.html` 파일을 `projects` 디렉토리에서 웹사이트의 root로 옮긴다면 (어느 디렉토리에도 포함되지 않는 최상위 디렉토리), `pdfs/project-brief.pdf` 의 상대 URL은 `http://www.example.com/pdfs/project-brief.pdf`를 가리킬 것입니다. `http://www.example.com/projects/pdfs/project-brief.pdf`를 가리키지 않습니다.
 
 
-# [**Link 실습**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#link_%EC%8B%A4%EC%8A%B5) {#343f27bb8bd042cdb68262be39d9477a}
+# **Link 실습** {#343f27bb8bd042cdb68262be39d9477a}
 

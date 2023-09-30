@@ -1,14 +1,14 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require("prism-react-renderer/themes/duotoneLight");
+const darkCodeTheme = require("prism-react-renderer/themes/synthwave84");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Web Developer Study Notes",
   tagline: "",
-  url: "https://sillsdev.github.io",
+  url: "https://web-developer-study-notes.pages.dev",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
@@ -16,7 +16,7 @@ const config = {
 
   organizationName: "leebonhaeng", // Usually your GitHub org/user name.
   projectName: "web-developer-study-notes", // Usually your repo name.
-  deploymentBranch: "gh-pages",
+  deploymentBranch: "cloudflare-pages",
 
   presets: [
     [
