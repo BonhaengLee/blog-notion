@@ -9,7 +9,7 @@ const config = {
   title: "Web Developer Study Notes",
   tagline: "",
   url: "https://sillsdev.github.io",
-  baseUrl: "/web-developer-study-notes/",
+  baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",

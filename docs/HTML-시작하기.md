@@ -1,0 +1,346 @@
+---
+title: HTML 시작하기
+sidebar_position: 5
+slug: /218d775a-ea18-4b73-b255-2d23756497e5
+---
+
+
+
+[https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
+
+
+요소와 속성을 정의하고 중요한 용어들을 살펴본다. HTML 요소를 구조화하는 방법, 언어의 중요한 기본 특징을 설명한다. 
+
+
+| 사전 지식 | 기본적인 컴퓨터의 이해, [기본 소프트웨어 설치하기](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/Installing_basic_software), [파일 다루기](https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/Dealing_with_files)의 기본적 지식. |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 목표    | HTML언어에 대해 익숙해지고, HTML을 이용하여 실습해봅니다.                                                                                                                                                                                                          |
+
+
+# HTML이란? {#b39eca0392ed4848b13f5103b49a7b29}
+
+
+HTML(Hypertext Markup Language, 하이퍼텍스트 마크업 언어)는 프로그래밍 언어는 아니고 웹페이지의 구조를 브라우저가 알 수 있도록 하는 마크업 언어다.
+
+
+HTML은 elements로 구성되어 각 컨텐츠의 부분들을 감싸고 마크업한다. 
+
+
+tags는 웹 상의 다른 페이지로 이동하게 하는 하이퍼 링크 내용들을 생성하거나, 단어를 강조하는 등의 역할을 한다. 
+
+
+“My cat is very grumy”
+
+
+다음의 문장을 그 자체로 표시하고 싶다면, &lt;p&gt; 태그로 감싸 엘리먼트를 문단으로 명시할 수 있다.
+
+
+```javascript
+<p>My cat is very grumpy</p>
+```
+
+
+:::💁🏻
+
+**참고** : HTML 요소는 대소문자를 구분하지 않는다. 하지만 가독성 문제로 소문자로 작성한다.
+
+:::
+
+
+
+
+ 
+
+
+# [**HTML 요소(Element)의 구조**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_%EC%9A%94%EC%86%8Celement%EC%9D%98_%EA%B5%AC%EC%A1%B0) {#fe002d2e0452454987cae6026f3cfa18}
+
+
+![https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png](/notion_imgs/1829960358.png)
+
+1. **여는 태그(Opening tag):** 이것은 요소의 “이름”과(이 경우 “p”), “열고 닫는 꺽쇠 괄호”로 구성된다. 
+요소가 시작(이 경우 단락의 시작 부분)부터 효과가 적용되기 시작한다.
+
+	:::💁🏻
+	
+	효과?
+	
+	:::
+	
+
+
+1. **닫는 태그(Closing tag):** 이것은 요소의 이름 앞에 슬래시(/)가 있는것을 제외하면 여는 태그(opening tag)와 같다. 이것은 요소의 끝(이 경우 단락의 끝 부분)에 위치한다.
+1. **내용(Content):** 요소의 내용이며, 이 경우 단순한 텍스트이다.
+1. **요소(Element):** 여는 태그, 닫는 태그, 내용을 통틀어 요소(element)라고한다.
+
+# [**포함(내포:內包)된 요소(Nesting elements)**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#%ED%8F%AC%ED%95%A8%EB%82%B4%ED%8F%AC%E5%85%A7%E5%8C%85%EB%90%9C_%EC%9A%94%EC%86%8Cnesting_elements) {#58b6c757c6914277a522a27038f1ee50}
+
+
+요소 안에 다른 요소가 들어갈 수 있다. 
+
+
+예를 들어, 아래와 같이 '매우'라는 단어를 강조하는 [`<strong>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)[ (en-US)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) 요소를 중첩해서 사용할 수 있다.
+
+
+```javascript
+<p>My cat is <strong>very</strong> grumpy.</p>
+```
+
+
+아래와 같은 문장은 중첩(重疊 : 서로 포개어(overlap 또는 stacking) 지거나, 엇갈려 겹쳐짐)되었으므로 잘못된 문장이다.
+
+
+```javascript
+<p>My cat is <strong>very grumpy.</p></strong> ❌
+```
+
+
+잘못 된 내포에도 불구하고 어떤 브라우저에서 이상없이 보일 수도 있다. 하지만 그저 그 브라우저가 문법에 흐물흐물(permittable)해서 웬만한 오류는 자체 수정해서 브라우저 창에 렌더링해주기 때문이다. '웬만한 오류는 알아서 처리해 준다.' 는 부분에서 초보자는 특히 주의해야 한다.
+
+
+# [**블럭 레벨 요소 vs 인라인 요소(Block versus inline elements)**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#%EB%B8%94%EB%9F%AD_%EB%A0%88%EB%B2%A8_%EC%9A%94%EC%86%8C_vs_%EC%9D%B8%EB%9D%BC%EC%9D%B8_%EC%9A%94%EC%86%8Cblock_versus_inline_elements) {#8c139a6b1e31481a90e1565ad82cc962}
+
+- **블록 레벨 요소(Block-level elements)** 는 웹페이지 상에 블록(Block)을 만드는 요소이다. 
+블록 레벨 요소는 앞뒤 요소 사이에 새로운 줄(Line)을 만들고 나타납니다. 즉 블록 레벨 요소 이전과 이후 요소사이의 줄을 바꾼다. 
+블록 레벨 요소는 일반적으로 페이지의 구조적 요소를 나타낼 때 사용됩니다. 예를 들어 개발자는 블록 레벨 요소를 사용하여 단락(Paragraphs), 목록(lists), 네비게이션 메뉴(Navigation Menus), 꼬리말(Footers) 등을 표현할 수 있다. 
+블록 레벨 요소는 인라인 요소(Inline elements)에 중첩될(Nested inside)수 없다. 그러나 블록 레벨 요소는 다른 블록 레벨 요소에 중첩될 수 있다.
+- 인라인 요소(Inline elements)는 항상 블록 레벨 요소 내에 포함되어 있다. 
+인라인 요소는 문서의 한 단락같은 큰 범위에는 적용될 수 없고 문장, 단어 같은 작은 부분에 대해서만 적용될 수 있다. 
+인라인 요소는 새로운 줄(Line)을 만들지 않는다. 즉 인라인 요소를 작성하면 그것을 작성한 단락내에 나타나게 된다. 예를 들어, 인라인 요소에는 하이퍼링크를 정의하는 요소인 [`<a>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/a) , 텍스트(Text)를 강조하는 요소인 [`<em>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/em),[`<strong>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)[ (en-US)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) 등이 있다.
+
+[예시]
+
+
+```javascript
+<em>first</em>
+<em>second</em>
+<em>third</em>
+
+<p>fourth</p>
+<p>fifth</p>
+<p>sixth</p>
+```
+
+
+```javascript
+first second third
+fourth
+
+fifth
+
+sixth
+```
+
+
+:::💁🏻
+
+**참고:** HTML5에서 요소 분류를 재정의했다: [Element content categories](https://www.whatwg.org/specs/web-apps/current-work/complete/section-index.html#element-content-categories). 이러한 정의는 이전의 정의보다 더 정확하고 덜 모호하지만, "블록"과 "인라인"보다 이해하기 훨씬 더 복잡하기 때문에, 이 주제 내내 이 정의들을 고수한다.
+
+:::
+
+
+
+
+:::💁🏻
+
+**참고:** 이 주제에서 사용되는 "블럭(block)"과 "인라인(inline)"의 뜻은 [the types of CSS boxes (en-US)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#types_of_css_boxes)에서 사용하고 있는 같은 단어와 혼돈하면 안된다. 기본적으로는 상관관계가 있지만 CSS 표시 유형을 변경해도 요소의 범주는 변경되지 않으며 요소가 포함할 수 있는 요소와 요소가 포함될 수 있는 요소에는 영향을 주지 않는다. HTML5가 이러한 용어들을 삭제했던 이유 중 하나는 이러한 다소 흔한 혼란을 막기 위해서였다.
+
+:::
+
+
+
+
+:::💁🏻
+
+**참고:** [Block-level elements](https://developer.mozilla.org/ko/docs/Glossary/Block-level_content)문서와 [Inline elements](https://developer.mozilla.org/ko/docs/Glossary/Inline-level_content)문서를 참고하면 블럭과 인라인 요소에 대한 유용한 내용을 찾을 수 있다.
+
+:::
+
+
+
+
+# [**빈 요소(Empty elements)**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#%EB%B9%88_%EC%9A%94%EC%86%8Cempty_elements) {#a178047ec6114b898a0abf61e709ff9b}
+
+
+모든 요소가 위에 언급된 여는 태그, 내용, 닫는 태그 패턴을 따르는 것은 아닙니다. 주로 문서에 무언가를 첨부하기 위해 단일 태그(Single tag)를 사용하는 요소도 있습니다. 예를 들어 [`<img>`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/img) 요소는 해당 위치에 이미지를 삽입하기 위한 요소입니다:
+
+
+“단일 태그”를 사용하는 &lt;img&gt; 같은 요소는 Empty elements다.
+
+
+:::💁🏻
+
+**참고:** 빈 요소는 가끔 Void 요소로 불리기도 한다.
+
+:::
+
+
+
+
+# [**속성(Attributes)**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#%EC%86%8D%EC%84%B1attributes) {#f6dbe6f6319b42ff897a578ffd7200ca}
+
+
+![https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png](/notion_imgs/420700055.png)
+
+
+속성을 사용할 때에는 아래 내용을 지켜야 한다:
+
+1. 요소 이름 다음에 바로 오는 속성은 요소 이름과 속성 사이에 공백이 있어야 되고, 하나 이상의 속성들이 있는 경우엔 속성 사이에 공백이 있어야 합니다.
+1. 속성 이름 다음엔 등호(=)가 붙습니다.
+1. 속성 값은 열고 닫는 따옴표로 감싸야 합니다.
+
+## 실습: 요소에 속성 추가하기 {#d095f3cee1694df389170891bd2c6b3f}
+
+
+&lt;a&gt;는 주로 2개의 속성이 사용된다.
+
+
+`href` : 이 속성에는 연결하고자 하는 웹 주소를 지정한다. 
+
+
+`title` : 링크에 대한 추가 정보를 나타낸다.
+
+
+`target` : 링크가 어떻게 열릴 것인지 지정한다. “_blank”는 새 탭에서 보여주는 것. 생략하면 현재 탭에서 보인다.
+
+
+## 참과 거짓 속성(Boolean attributes) {#e340e51ad5654ead817e88c734a6501d}
+
+
+값이 없는 속성을 불 속성이라고 한다.
+
+
+```java
+<input type="text" disabled="disabled">
+```
+
+
+그 속성의 이름과 동일한 하나의 값만 가질 수 있다.
+
+
+```java
+<input type="text" disabled>
+```
+
+
+## 속성값의 따옴표 생략 {#5c80089ab890408580ca242beaca2711}
+
+
+```html
+<a href=https://www.mozilla.org/>favorite website</a>
+```
+
+
+```html
+<a href=https://www.mozilla.org/ title=The Mozilla homepage>favorite website</a>
+```
+
+
+2번째부터는 문제가 발생할 것이다. 브라우저가 마크업을 잘못 해석해서 title이 세 개의 속성값을 가진다고 생각할 것이다. 
+
+
+그래서 항상 속성값에 따옴표를 붙이라고 조언한다. 오류를 피하고 가독성도 좋아지기 때문이다.
+
+
+## 작은 따옴표, 큰 따옴표? {#11f148f0198e439d9483fee52ea70315}
+
+
+원하는 걸 하나 정해서 쓰면 된다.
+
+
+```html
+<a href="http://www.example.com" title="Isn't this fun?">A link to my example.</a
+>
+```
+
+
+하지만 만약 따옴표 안에 **같은 따옴표**를 사용하고 싶다면(작은 따옴표든 큰 따옴표든) 따옴표를 표시하기 위해서 [**HTML entities**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Entity_references_Including_special_characters_in_HTML)를 사용하세요. 
+
+
+```html
+<a href='http://www.example.com' title='Isn**&#39;**t this fun?'>A link to my example.</a>
+```
+
+
+# [**HTML 문서의 구조**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_%EB%AC%B8%EC%84%9C%EC%9D%98_%EA%B5%AC%EC%A1%B0) {#b8f57313ae334fd8915135ae9bf550f8}
+
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+  </head>
+  <body>
+    <p>This is my page</p>
+  </body>
+</html>
+```
+
+1. `<!DOCTYPE html>`: HTML 초창기에 자동 오류 검사 등이 가능한 좋은 HTML로 작동하는 것을 의미한다. 
+`<!DOCTYPE html>` 은 유효한 문서 형식을 나타내는 짧은 문장이란 것만 알고 있으면 된다.
+1. `<html></html>`: 전체 페이지 컨텐츠를 포함하는 기본 요소.
+1. `<head></head>`: 사용자에게 보여지지 않는다. 검색 결과에 노출될 키워드, 홈페이지 설명, CSS 스타일, <u>**charactor setdeclaration**</u> 등 페이지의 모든 내용을 담고 있다.
+1. `<meta charset="utf-8">`: HTML 문서의 문자 인코딩 설정을 UTF-8로 지정하는 것으로 전세계에서 사용되는 언어에 대한 대부분의 문자가 포함된다.
+이 설정을 통해 페이지의 모든 텍스트 내용을 처리할 수 있다.
+1. `<title></title>`: 페이지가 로드되는 브라우저 탭에 표시되는 제목으로 사용. 북마크 시 페이지 설명에도 사용됨.
+1. `<body></body>`: 페이지에 표시되는 모든 콘텐츠가 포함된다.
+
+## [**HTML 공백**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_%EA%B3%B5%EB%B0%B1) {#b49056d2e9a34efe9349ecedfbc5d7c6}
+
+
+HTML 요소 내에서 얼마나 많은 공백(하나 이상 또는 줄 바꿈)을 사용하든 HTML 파서는 코드를 렌더링할 때 공백 시퀀스를 단일 공백으로 줄인다. 하지만 가독성을 위해 공백을 적절히 사용해라.
+
+
+HTML은 중첩된 각 요소가 내부에 있는 것보다 두 칸 더 들여쓰기되어 있다.
+
+
+# [**Entity references: HTML에 특수 문자 포함**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#entity_references_html%EC%97%90_%ED%8A%B9%EC%88%98_%EB%AC%B8%EC%9E%90_%ED%8F%AC%ED%95%A8) {#0ff7660b760e44e7bc7dc4d5e5b04dae}
+
+
+HTML 구문에 쓰이는 `<`,`>`, `"`및 `&` 는 텍스트에 어떻게 포함시킬까?
+
+
+[**링크**](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)를 보자. 엠퍼샌드(&)로 시작하고 세미콜론(;)으로 끝난다.
+
+
+ 
+
+
+```html
+<p>In HTML, you define a paragraph using the <p> element.</p>
+
+<p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>
+```
+
+
+첫번째 단락의 경우 &lt;p&gt;의 두 번째 인스턴스를 새 단락이 시작하는 것으로 해석한다.
+
+
+:::tip
+
+**참고:** HTML의 [문자 인코딩이 UTF-8로 설정](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#specifying_your_document%27s_character_encoding)되어 있기 때문에 최신 브라우저는 실제 기호를 잘 처리하므로 다른 기호에 대해서는 엔티티 참조를 사용할 필요가 없다.
+
+:::
+
+
+
+
+# [**HTML 주석**](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_%EC%A3%BC%EC%84%9D) {#2036458b3a494b7caaf7f96a6b7b28f9}
+
+
+주석의 목적은 코드에 메모를 포함시켜 논리 또는 코딩을 설명할 수 있도록 하는 것이다. 
+
+
+코드를 완전히 기억 못할 정도가 되었을 때 코드베이스로 돌아오는 경우 매우 유용하다. 
+
+
+HTML 주석을 쓰려면 특수 마커 `<!-` 및 `->`로 주석을 묶는다.
+
+
+```html
+<p>I'm not inside a comment</p>
+
+<!-- <p>I am!</p> -->
+```
+
